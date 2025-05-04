@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .service-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: none;
+        border-radius: 15px;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-icon {
+        font-size: 40px;
+        color: #0d6efd;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+        color:  #329af0;
+    }
+</style>
+
+<div class="container mt-5">
+    <h2 class="section-title">Our Services</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card service-card text-center p-4 h-100 shadow-sm">
+                <div class="service-icon"><i class="bi bi-heart-pulse"></i></div>
+                <h5 class="card-title text-primary">Cardiology</h5>
+                <p class="card-text">Advanced heart care including diagnosis, treatment, and prevention with state-of-the-art equipment.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card service-card text-center p-4 h-100 shadow-sm">
+                <div class="service-icon"><i class="bi bi-bandaid"></i></div>
+                <h5 class="card-title text-primary">Orthopedics</h5>
+                <p class="card-text">Comprehensive care for bones and joints by expert surgeons and physical therapy support.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card service-card text-center p-4 h-100 shadow-sm">
+                <div class="service-icon"><i class="bi bi-baby"></i></div>
+                <h5 class="card-title text-primary">Pediatrics</h5>
+                <p class="card-text">Full-service child care including immunizations, checkups, and illness treatment in a child-friendly space.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card service-card text-center p-4 h-100 shadow-sm">
+                <div class="service-icon"><i class="bi bi-hospital"></i></div>
+                <h5 class="card-title text-primary">General Surgery</h5>
+                <p class="card-text">Experienced surgeons performing a wide range of operations with precision and compassionate care.</p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card service-card text-center p-4 h-100 shadow-sm">
+                <div class="service-icon"><i class="bi bi-emoji-smile"></i></div>
+                <h5 class="card-title text-primary">Dermatology</h5>
+                <p class="card-text">Specialized skin care and cosmetic treatments to help you look and feel your best.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
